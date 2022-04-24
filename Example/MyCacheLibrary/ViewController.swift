@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import MyCacheLibrary
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        let obj = MyClass()
+        if #available(iOS 11.0, *) {
+            label.textColor = MyClass.mycolor
+        } else {
+            // Fallback on earlier versions
+        }
+        obj.MyClass()
     }
 
     override func didReceiveMemoryWarning() {
