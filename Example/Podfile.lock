@@ -1,0 +1,16 @@
+PODS:
+  - MyCacheLibrary (0.1.0)
+
+DEPENDENCIES:
+  - MyCacheLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  MyCacheLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MyCacheLibrary: 77a15c45332b7c0ba01e16b4442c349c85638604
+
+PODFILE CHECKSUM: 8a9063a37d8f358b01c1dc56e1fad99373c5ab62
+
+COCOAPODS: 1.11.3

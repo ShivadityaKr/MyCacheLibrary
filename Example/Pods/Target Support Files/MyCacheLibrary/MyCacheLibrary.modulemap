@@ -1,0 +1,6 @@
+framework module MyCacheLibrary {
+  umbrella header "MyCacheLibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}

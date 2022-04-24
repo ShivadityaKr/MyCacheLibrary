@@ -29,8 +29,8 @@
 
 /* Begin PBXFileReference section */
 		13F928E0DCE0049E0B55CB05 /* Pods_MyCacheLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCacheLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		313DA591E842C2E06397E10B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		5758226CCD7730A7B82312F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		313DA591E842C2E06397E10B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5758226CCD7730A7B82312F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* MyCacheLibrary_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCacheLibrary_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		B51F078FAD3B1A15EE43F27A /* Pods_MyCacheLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyCacheLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB22BC25C1B63213C5CD5D75 /* Pods-MyCacheLibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCacheLibrary_Example.release.xcconfig"; path = "Target Support Files/Pods-MyCacheLibrary_Example/Pods-MyCacheLibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D5CF9BB1688D8F62BF0737E2 /* Pods-MyCacheLibrary_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyCacheLibrary_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MyCacheLibrary_Tests/Pods-MyCacheLibrary_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA99488F14F36D55F9B5E21D /* MyCacheLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MyCacheLibrary.podspec; path = ../MyCacheLibrary.podspec; sourceTree = "<group>"; };
+		FA99488F14F36D55F9B5E21D /* MyCacheLibrary.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MyCacheLibrary.podspec; path = ../MyCacheLibrary.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				D5CF9BB1688D8F62BF0737E2 /* Pods-MyCacheLibrary_Tests.debug.xcconfig */,
 				6350FB22B0CB2F2B5BA05B09 /* Pods-MyCacheLibrary_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

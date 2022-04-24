@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MyCacheLibrary'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MyCacheLibrary.'
+  s.summary          = 'This pod is for demo MyCacheLibrary.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,19 +17,18 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'This pod is for caching for demo MycacheLibrary'
+                       
 
   s.homepage         = 'https://github.com/ShivadityaKr/MyCacheLibrary'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ShivadityaKr' => 'shivaditya.thakur@bigohtech.com' }
+  s.author           = { 'ShivadityaKr' => 's4shivaditya@gmail.com' }
   s.source           = { :git => 'https://github.com/ShivadityaKr/MyCacheLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
-
+  s.ios.deployment_target = '12.0'
+  s.swift_version = '5.0'
   s.source_files = 'MyCacheLibrary/Classes/**/*'
   
   # s.resource_bundles = {
