@@ -27,8 +27,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/ShivadityaKr/MyCacheLibrary.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.0'
-  s.swift_version = '5.0'
+  s.ios.deployment_target = '14.0'
+  s.swift_version = '5.2'
   s.source_files = 'MyCacheLibrary/Classes/**/*'
   
    s.resource_bundles = {
@@ -38,6 +38,6 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'Foundation'
    s.dependency 'RealmSwift', '~> 10'
-   s.dependency 'Moya', '~> 15.0'
+   s.dependency 'Moya'
    s.dependency 'PromiseKit', '~> 6.8'
 end
