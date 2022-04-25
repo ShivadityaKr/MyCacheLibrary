@@ -9,18 +9,21 @@
 import UIKit
 import MyCacheLibrary
 class ViewController: UIViewController {
-
-    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var fetchButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let obj = MyClass()
-        if #available(iOS 11.0, *) {
-            label.textColor = MyClass.mycolor
-        } else {
-            // Fallback on earlier versions
+        fetchButton.addTarget(self, action: #selector(didTapFetchButton), for: .touchUpInside)
+    }
+    @objc func didTapFetchButton() {
+        let manager = PromiseManager()
+        firstly {
+            manager.fetchAPI()
+        }.done { result in
+            print("Promise")
+            print(result[1].author)
+            self.titleLabel.text = "\(result[0].title)"
         }
-        obj.MyClass()
     }
 
     override func didReceiveMemoryWarning() {
