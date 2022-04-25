@@ -32,10 +32,12 @@ Pod::Spec.new do |s|
   s.source_files = 'MyCacheLibrary/Classes/**/*'
   
    s.resource_bundles = {
-     'MyCacheLibrary' => ['MyCacheLibrary/Assets/**/*']
+     'MyCacheLibrary' => ['MyCacheLibrary/Assets/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+   s.frameworks = 'UIKit', 'Foundation'
+   s.dependency 'RealmSwift', '~> 10'
+   s.dependency 'Moya', '~> 15.0'
+   s.dependency 'PromiseKit', '~> 6.8'
 end
